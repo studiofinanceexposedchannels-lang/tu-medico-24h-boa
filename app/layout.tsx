@@ -17,15 +17,15 @@ const jakarta = Plus_Jakarta_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'Protocolo de 5 Días · El Truco de la Pimienta',
+  title: 'Tu Médico Virtual 24H · Neuropatía',
   description:
-    'Oferta exclusiva para clientes de El Truco de la Pimienta: el Protocolo de 5 Días para trabajar tu equilibrio, estabilidad y seguridad al caminar.',
+    'Tu Médico Virtual de IA especializado en neuropatía, disponible 24 horas para orientar tus dudas y acompañar tu proceso.',
   generator: 'v0.app',
 }
 
 export const viewport: Viewport = {
-  colorScheme: 'light',
-  themeColor: '#c0392b',
+  colorScheme: 'dark',
+  themeColor: '#0b0f18',
   maximumScale: 5,
 }
 
@@ -35,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="es" className={`light bg-background ${inter.variable} ${jakarta.variable}`}>
+    <html lang="es" className={`dark bg-background ${inter.variable} ${jakarta.variable}`}>
       <body className="font-sans antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
